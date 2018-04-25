@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CS:GO Academy | Ranks</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="ranksheader">
+		<div class="navbar">
+			<div class="navlogo">
+				<a href="index.html"><img src="pict/navlogo.png"></a>
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="guns.html">Guns</a></li>
+					<li><a href="maps.html">Maps</a></li>
+					<li><a href="ranks.html">Ranks</a></li>
+					<li>
+						<a onclick="myFunction()" class="dropbtn">More &#9661;</a>
+					  	<div id="myDropdown" class="dropdown-content">
+							<a href="news.html">News</a>
+							<a href="players.html">Players</a>
+					  	</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="sectionhome">
+		<div class="container">
+			
+			<h1>Ranks</h1>
+			<hr>
+			<br>
+
+			<div class="sectiontextranks">
+				<p>Ada 18 peringkat di CSGO, yang paling rendah adalah Silver 1 dan yang tertinggi adalah Global Elite.</p>
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/silver1.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/silver2.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/silver3.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/silver4.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/silverelite.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/silverelitemaster.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/gn1.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/gn2.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/gn3.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/gnm.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/mg1.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/mg2.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/mge.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/dmg.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/le.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/lem.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/smfc.png">
+			</div>
+
+			<div class="rank-wrapper">
+				<img src="ranks/ge.png">
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container"><p>Created by Jonathan Bernad & Avinash</p></div>
+	</footer>
+
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		    	var openDropdown = dropdowns[i];
+		     	if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+	</script>
+</body>
+</html>

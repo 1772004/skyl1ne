@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CS:GO Academy | Players</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="playersheader">
+		<div class="navbar">
+			<div class="navlogo">
+				<a href="index.html"><img src="pict/navlogo.png"></a>
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="guns.html">Guns</a></li>
+					<li><a href="maps.html">Maps</a></li>
+					<li><a href="ranks.html">Ranks</a></li>
+					<li>
+						<a onclick="myFunction()" class="dropbtn">More &#9661;</a>
+					  	<div id="myDropdown" class="dropdown-content">
+							<a href="news.html">News</a>
+							<a href="players.html">Players</a>
+					  	</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="sectionhome">
+		<div class="container">
+			<h1>Players of the Week</h1>
+			<hr>
+			<br>
+			<div class="pcontainer">
+				<img src="pict/s1mple.jpeg" class="pimage">
+				<div class="poverlay">
+					<div class="ptext">s1mple</div>
+				</div>
+			</div>
+
+			<div class="pcontainer">
+				<img src="pict/dev1ce.jpeg" class="pimage">
+				<div class="poverlay">
+					<div class="ptext">dev1ce</div>
+				</div>
+			</div>
+
+			<div class="pcontainer">
+				<img src="pict/gla1ve.jpeg" class="pimage">
+				<div class="poverlay">
+					<div class="ptext">gla1ve</div>
+				</div>
+			</div>
+
+			<div class="pcontainer">
+				<img src="pict/krimz.jpeg" class="pimage">
+				<div class="poverlay">
+					<div class="ptext">KRIMZ</div>
+				</div>
+			</div>
+
+			<div class="pcontainer">
+				<img src="pict/xyp9x.jpeg" class="pimage">
+				<div class="poverlay">
+					<div class="ptext">Xyp9x</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer>
+		<div class="container"><p>Created by Jonathan Bernad & Avinash</p></div>
+	</footer>
+
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		    	var openDropdown = dropdowns[i];
+		     	if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+	</script>
+</body>
+</html>

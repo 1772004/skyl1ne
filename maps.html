@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CS:GO Academy | Maps</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="mapsheader">
+		<div class="navbar">
+			<div class="navlogo">
+				<a href="index.html"><img src="pict/navlogo.png"></a>
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="guns.html">Guns</a></li>
+					<li><a href="maps.html">Maps</a></li>
+					<li><a href="ranks.html">Ranks</a></li>
+					<li>
+						<a onclick="myFunction()" class="dropbtn">More &#9661;</a>
+					  	<div id="myDropdown" class="dropdown-content">
+							<a href="news.html">News</a>
+							<a href="players.html">Players</a>
+					  	</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="sectionhome">
+		<div class="container">
+			<h1>Maps</h1>
+			<hr>
+			<br>
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+					<div class="slidetext">CACHE</div>
+				  	<img src="maps/cachex.jpg" style="width:100%">
+				  
+				</div>
+
+				<div class="mySlides fade">
+					<div class="slidetext">INFERNO</div>
+				  	<img src="maps/infernox.jpg" style="width:100%">
+				  
+				</div>
+
+				<div class="mySlides fade">
+					<div class="slidetext">COBBLESTONE</div>
+				  	<img src="maps/cobblex.jpg" style="width:100%">
+				  
+				</div>
+
+				<div class="mySlides fade">
+					<div class="slidetext">MIRAGE</div>
+				  	<img src="maps/miragex.png" style="width:100%">
+				  
+				</div>
+
+				<div class="mySlides fade">
+					<div class="slidetext">OVERPASS</div>
+				  	<img src="maps/overpassx.jpg" style="width:100%">
+				  
+				</div>
+
+				<div class="mySlides fade">
+					<div class="slidetext">NUKE</div>
+				 	<img src="maps/nukex.jpg" style="width:100%">
+				  
+				</div>
+
+				<div class="mySlides fade">
+					<div class="slidetext">TRAIN</div>
+				  	<img src="maps/trainx.jpg" style="width:100%">
+				</div>
+
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		</div>
+			
+			<br>
+
+			<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+	</section>
+
+	<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		    	var openDropdown = dropdowns[i];
+		     	if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+	</script>
+	
+
+	<footer>
+		<div class="container"><p>Created by Jonathan Bernad & Avinash</p></div>
+	</footer>	
+</body>
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CS:GO Academy | Guns</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="gunsheader">
+		<div class="navbar">
+			<div class="navlogo">
+				<a href="index.html"><img src="pict/navlogo.png"></a>
+			</div>
+			
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="guns.html">Guns</a></li>
+					<li><a href="maps.html">Maps</a></li>
+					<li><a href="ranks.html">Ranks</a></li>
+					<li>
+						<a onclick="myFunction()" class="dropbtn">More &#9661;</a>
+					  	<div id="myDropdown" class="dropdown-content">
+							<a href="news.html">News</a>
+							<a href="players.html">Players</a>
+					  	</div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="sectionhome">
+		<div class="container">
+			<div class="main">
+
+				<h1>Guns</h1>
+				<hr>
+				<br>
+
+				<div id="myBtnContainer">
+					<button class="btn active" onclick="filterSelection('all')"> Show All</button>
+					<button class="btn" onclick="filterSelection('pistol')"> Pistols</button>
+					<button class="btn" onclick="filterSelection('shotgun')"> Shotguns</button>
+					<button class="btn" onclick="filterSelection('smg')"> Submachine Guns</button>
+					<button class="btn" onclick="filterSelection('rifle')"> Rifles</button>
+					<button class="btn" onclick="filterSelection('machinegun')"> Machine guns</button>
+				</div>
+
+				<!-- Portfolio Gallery Grid -->
+				<div class="row">
+
+					<!-- Pistols -->
+
+  					<div class="column pistol">
+    					<div class="content">
+      						<img src="guns/glock.png" alt="Mountains" style="width:100%">
+      						<h4>Glock-18</h4>
+    					</div>
+  					</div>
+
+					<div class="column pistol">
+	    				<div class="content">
+	    					<img src="guns/cz.png" alt="Lights" style="width:100%">
+	      					<h4>CZ75 Auto</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column pistol">
+	    				<div class="content">
+	    					<img src="guns/p250.png" alt="pistol" style="width:100%">
+	      					<h4>P250</h4>
+	    				</div>
+	  				</div>
+
+					<div class="column pistol">
+	    				<div class="content">
+						    <img src="guns/deagle.png" alt="pistol" style="width:100%">
+						    <h4>Desert Eagle</h4>
+	    				</div>
+	  				</div>
+
+					<div class="column pistol">
+	    				<div class="content">
+						    <img src="guns/dual.png" alt="pistol" style="width:100%">
+						    <h4>Dual Berettas</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column pistol">
+					    <div class="content">
+					    	<img src="guns/tec9.png" alt="pistol" style="width:100%">
+					      	<h4>Tec-9</h4>
+	    				</div>
+	  				</div>
+
+				  	<div class="column pistol">
+				  		<div class="content">
+				    		<img src="guns/r8.png" alt="pistol" style="width:100%">
+				      		<h4>R8 Revolver</h4>
+				    	</div>
+				  	</div>
+
+					<div class="column pistol">
+						<div class="content">
+					    	<img src="guns/usp.png" alt="pistol" style="width:100%">
+					     	<h4>USP-S</h4>
+					    </div>
+					</div>
+
+	  				<div class="column pistol">
+	  					<div class="content">
+	  						<img src="guns/p2000.png" alt="pistol" style="width:100%">
+	 						<h4>P2000</h4>
+	  					</div>
+	  				</div>
+
+					<div class="column pistol">
+	  					<div class="content">
+	  						<img src="guns/fiveseven.png" alt="pistol" style="width:100%">
+	  						<h4>Five-SeveN</h4>
+	  					</div>
+	  				</div>
+
+	 				<!-- Shotguns -->
+
+	  				<div class="column shotgun">
+	  					<div class="content">
+	  						<img src="guns/nova.png" alt="Car" style="width:100%">
+	  						<h4>Nova</h4>
+	 					</div>
+					</div>
+
+	  				<div class="column shotgun">
+	    				<div class="content">
+	    					<img src="guns/xm10.png" alt="Car" style="width:100%">
+	      					<h4>XM1014</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column shotgun">
+	    				<div class="content">
+	    					<img src="guns/sawedoff.png" alt="Car" style="width:100%">
+	      					<h4>Sawed-Off</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column shotgun">
+	    				<div class="content">
+	    					<img src="guns/mag7.png" alt="Car" style="width:100%">
+	      					<h4>MAG-7</h4>
+	    				</div>
+					</div>
+
+					<!-- SMG -->
+
+	  				<div class="column smg">
+	    				<div class="content">
+	      					<img src="guns/mac10.png" alt="Car" style="width:100%">
+	      					<h4>MAC-10</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column smg">
+	    				<div class="content">
+	    					<img src="guns/mp7.png" alt="Car" style="width:100%">
+	      					<h4>MP7</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column smg">
+	    				<div class="content">
+	    					<img src="guns/ump.png" alt="Car" style="width:100%">
+	      					<h4>UMP-45</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column smg">
+	    				<div class="content">
+	    					<img src="guns/ppbizon.png" alt="Car" style="width:100%">
+	      					<h4>PP-Bizon</h4>
+	    				</div>
+	 	 			</div>
+
+	  				<div class="column smg">
+	    				<div class="content">
+	    					<img src="guns/p90.png" alt="Car" style="width:100%">
+	      					<h4>P90</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column smg">
+	    				<div class="content">
+	    					<img src="guns/mp9.png" alt="Car" style="width:100%">
+	      					<h4>MP9</h4>
+	    				</div>
+	  				</div>
+
+	  				<!-- Rifles -->
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/ak47.png" alt="Car" style="width:100%">
+	      					<h4>AK-47</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/galil.png" alt="Car" style="width:100%">
+	      					<h4>Galil AR</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/ssg.png" alt="Car" style="width:100%">
+	      					<h4>SSG 08</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/awp.png" alt="Car" style="width:100%">
+	      					<h4>AWP</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/g3sg1.png" alt="Car" style="width:100%">
+	      					<h4>G3SG1</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/famas.png" alt="Car" style="width:100%">
+	      					<h4>FAMAS</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/m4a4.png" alt="Car" style="width:100%">
+	      					<h4>M4A4</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/ak47.png" alt="Car" style="width:100%">
+	      					<h4>M4A1-S</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/aug.png" alt="Car" style="width:100%">
+	      					<h4>AUG</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/scar.png" alt="Car" style="width:100%">
+	      					<h4>SCAR-20</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column rifle">
+	    				<div class="content">
+	      					<img src="guns/sg553.png" alt="Car" style="width:100%">
+	      					<h4>SG 553</h4>
+	    				</div>
+	  				</div>
+
+	  				<!-- Machine Guns -->
+
+	  				<div class="column machinegun">
+	    				<div class="content">
+	      					<img src="guns/m249.png" alt="Car" style="width:100%">
+	      					<h4>M249</h4>
+	    				</div>
+	  				</div>
+
+	  				<div class="column machinegun">
+	    				<div class="content">
+	      					<img src="guns/negev.png" alt="Car" style="width:100%">
+	      					<h4>Negev</h4>
+	    				</div>
+	  				</div>
+				<!-- END GRID -->
+				</div>
+			<!-- END MAIN -->
+			</div>
+		</section>
+
+	<script type="text/javascript">
+		filterSelection("all") // Execute the function and show all columns
+		function filterSelection(c) {
+  			var x, i;
+  			x = document.getElementsByClassName("column");
+  			if (c == "all") c = "";
+  			// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  		for (i = 0; i < x.length; i++) {
+    		w3RemoveClass(x[i], "show");
+    		if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  			}
+		}
+
+		// Show filtered elements
+		function w3AddClass(element, name) {
+  		var i, arr1, arr2;
+		 	arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+    			if (arr1.indexOf(arr2[i]) == -1) {
+      				element.className += " " + arr2[i];
+    			}
+  			}
+		}
+
+		// Hide elements that are not selected
+		function w3RemoveClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+		    	while (arr1.indexOf(arr2[i]) > -1) {
+		      		arr1.splice(arr1.indexOf(arr2[i]), 1); 
+		    	}
+		  	}
+		  	element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("myBtnContainer");
+		var btns = btnContainer.getElementsByClassName("btn");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function(){
+			    var current = document.getElementsByClassName("active");
+			    current[0].className = current[0].className.replace(" active", "");
+			    this.className += " active";
+		  	});
+		}
+	</script>
+
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		    document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(event) {
+			if (!event.target.matches('.dropbtn')) {
+
+		    var dropdowns = document.getElementsByClassName("dropdown-content");
+		    var i;
+		    for (i = 0; i < dropdowns.length; i++) {
+		    	var openDropdown = dropdowns[i];
+		     	if (openDropdown.classList.contains('show')) {
+		        openDropdown.classList.remove('show');
+		      }
+		    }
+		  }
+		}
+	</script>
+
+	<footer>
+		<div class="container"><p>Created by Jonathan Bernad & Avinash</p></div>
+	</footer>
+</body>
+</html>
